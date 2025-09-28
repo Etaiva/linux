@@ -1,0 +1,39 @@
+# 🛠️ Top 10 Linux Networking Tools
+
+A curated list of essential tools for network analysis, monitoring, and performance testing on Linux systems.
+
+---
+
+## 1. **Wireshark**
+🔍 Capture and analyze network packets.
+
+## 2. **Nmap**
+📡 Scan networks and discover devices or open ports.
+
+## 3. **Netcat (nc)**
+🔗 Test connections and transfer data between hosts.
+
+## 4. **tcpdump**
+📄 Command-line packet sniffer for deep traffic inspection.
+
+## 5. **Iperf3**
+🚀 Measure network speed and performance metrics.
+
+## 6. **Nagios**
+📈 Monitor network uptime and receive alerts.
+
+## 7. **Zabbix**
+📊 Track network and server performance over time.
+
+## 8. **Netdata**
+📟 Real-time system monitoring with a visual dashboard.
+
+## 9. **WireGuard**
+🔐 Fast and secure VPN solution for encrypted networking.
+
+## 10. **Kismet**
+📶 Detect and analyze Wi-Fi networks and signals.
+
+---
+
+📎 *Source: Hacker339*

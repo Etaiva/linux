@@ -1,0 +1,91 @@
+| #  | Command            | Description                                                                 |
+|----|--------------------|-----------------------------------------------------------------------------|
+| 1  | **ls**             | List files and directories in the current directory                        |
+| 2  | **pwd**            | Print the current working directory path                                   |
+| 3  | **cd [dir]**       | Change directory to `[dir]`                                                |
+| 4  | **mkdir [dir]**    | Create a new directory                                                     |
+| 5  | **rm [file]**      | Remove a file                                                             |
+| 6  | **rm -r [dir]**    | Remove a directory and its contents recursively                            |
+| 7  | **cp [src] [dest]**| Copy files or directories                                                  |
+| 8  | **mv [src] [dest]**| Move or rename files/directories                                           |
+| 9  | **cat [file]**     | Display contents of a file                                                 |
+| 10 | **nano [file]**    | Edit a file using Nano text editor                                         |
+| 11 | **touch [file]**   | Create an empty file                                                       |
+| 12 | **find / -name X** | Search for files named `X` starting at root                                |
+| 13 | **grep 'text' file** | Search for specific text inside a file                                   |
+| 14 | **ps aux**         | Show all running processes                                                 |
+| 15 | **top**            | Display real-time system processes and resource usage                      |
+| 16 | **kill [PID]**     | Terminate a process by its Process ID                                      |
+| 17 | **ifconfig**       | Show network interfaces and IP addresses                                   |
+| 18 | **ping [host]**    | Test connectivity to a host                                                |
+| 19 | **wget [url]**     | Download files from the web                                                |
+| 20 | **curl [url]**     | Transfer data from or to a server                                          |
+| 21 | **sudo [command]** | Run a command with superuser privileges                                    |
+| 22 | **apt update**     | Update package lists                                                       |
+| 23 | **apt upgrade**    | Upgrade installed packages                                                 |
+| 24 | **apt install pkg**| Install a package                                                          |
+| 25 | **apt remove pkg** | Remove a package                                                           |
+| 26 | **history**        | Show command history                                                       |
+| 27 | **chmod 755 file** | Change file permissions (read/write/execute)                               |
+| 28 | **chown user file**| Change file ownership                                                      |
+| 29 | **df -h**          | Show disk space usage in human-readable format                             |
+| 30 | **du -sh [dir]**   | Show total size of a directory                                             |
+
+  | #  | Command / Tool       | Description                                                                 |
+|----|----------------------|-----------------------------------------------------------------------------|
+| 1  | **nmap [target]**    | Network scanner to discover hosts, services, and open ports                 |
+| 2  | **netstat -tulnp**   | Show active network connections and listening ports                         |
+| 3  | **ss -tulwn**        | Modern alternative to netstat for socket statistics                         |
+| 4  | **tcpdump -i eth0**  | Capture and analyze network packets on interface eth0                       |
+| 5  | **wireshark**        | GUI packet analyzer for deep inspection of network traffic                  |
+| 6  | **airmon-ng**        | Enable monitor mode on wireless interfaces                                  |
+| 7  | **airodump-ng wlan0**| Capture Wi-Fi packets for analysis                                          |
+| 8  | **aircrack-ng file.cap** | Crack Wi-Fi passwords from captured packets                             |
+| 9  | **john [file]**      | Password cracker (John the Ripper)                                          |
+| 10 | **hashcat -m 0 hash.txt wordlist.txt** | GPU‑accelerated password cracking                        |
+| 11 | **sqlmap -u URL**    | Automated SQL injection testing tool                                        |
+| 12 | **hydra -l user -P passlist.txt target service** | Brute force login credentials                  |
+| 13 | **metasploit/msfconsole** | Exploitation framework for penetration testing                         |
+| 14 | **nikto -h host**    | Web server vulnerability scanner                                            |
+| 15 | **dirb URL /wordlist** | Directory brute‑forcing for hidden web paths                              |
+| 16 | **gobuster dir -u URL -w wordlist.txt** | Fast directory and file brute‑forcing                  |
+| 17 | **theHarvester -d domain -l 500 -b google** | Gather emails, subdomains, and names from search engines |
+| 18 | **recon-ng**         | Web reconnaissance framework                                                |
+| 19 | **volatility -f memdump.img** | Memory forensics framework for analyzing RAM dumps                 |
+| 20 | **autopsy**          | GUI forensic suite for disk image analysis                                  |
+| 21 | **chkrootkit**       | Detect rootkits on the system                                               |
+| 22 | **rkhunter --check** | Rootkit hunter for scanning suspicious files and processes                  |
+| 23 | **gpg --encrypt file** | Encrypt files with GNU Privacy Guard                                      |
+| 24 | **openssl enc -aes-256-cbc -in file -out file.enc** | Encrypt files with OpenSSL                 |
+| 25 | **iptables -L**      | List firewall rules                                                         |
+| 26 | **ufw enable**       | Enable uncomplicated firewall                                               |
+| 27 | **fail2ban-client status** | Check status of intrusion prevention service                          |
+| 28 | **clamav clamscan file** | Scan files for malware                                                  |
+| 29 | **lynis audit system** | Security auditing tool for Linux                                          |
+| 30 | **whois domain**     | Query domain registration details                                           |
+
+This table is designed for Parrot OS cybersecurity workflows
+
+| Category       | Tool / Command                          | Purpose                                                                 |
+|----------------|-----------------------------------------|-------------------------------------------------------------------------|
+| **Recon**      | **nmap**                                | Scan networks for hosts, services, and open ports                       |
+|                | **netstat / ss**                        | View active connections and listening ports                             |
+|                | **theHarvester**                        | Gather emails, subdomains, and names from search engines                |
+|                | **recon-ng**                            | Web reconnaissance framework                                            |
+|                | **whois**                               | Query domain registration details                                       |
+|                | **dirb / gobuster**                     | Directory brute-forcing for hidden web paths                            |
+|                | **nikto**                               | Web server vulnerability scanner                                        |
+| **Exploitation** | **sqlmap**                            | Automated SQL injection testing                                         |
+|                | **hydra**                               | Brute force login credentials                                           |
+|                | **john / hashcat**                      | Password cracking tools                                                 |
+|                | **metasploit (msfconsole)**             | Exploitation framework for penetration testing                          |
+|                | **aircrack-ng suite**                   | Wireless network attacks and password cracking                          |
+| **Defense**    | **iptables / ufw**                      | Configure and manage firewall rules                                     |
+|                | **fail2ban**                            | Intrusion prevention by banning suspicious IPs                          |
+|                | **chkrootkit / rkhunter**               | Detect rootkits on the system                                           |
+|                | **clamav**                              | Scan files for malware                                                  |
+|                | **lynis**                               | Security auditing tool for Linux                                        |
+|                | **gpg / openssl**                       | Encrypt files and manage cryptographic operations                       |
+| **Forensics**  | **tcpdump / wireshark**                 | Capture and analyze network packets                                     |
+|                | **volatility**                          | Memory forensics framework                                              |
+|                | **autopsy**                             | GUI forensic suite for disk image analysis                              |
